@@ -1,0 +1,9 @@
+D:\Remote Desktop\Client\bin\Debug\Client.exe.config
+D:\Remote Desktop\Client\bin\Debug\Client.exe
+D:\Remote Desktop\Client\bin\Debug\Client.pdb
+D:\Remote Desktop\Client\obj\Debug\Client.frmClient.resources
+D:\Remote Desktop\Client\obj\Debug\Client.frmRemoteDesktop.resources
+D:\Remote Desktop\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Remote Desktop\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\Remote Desktop\Client\obj\Debug\Client.exe
+D:\Remote Desktop\Client\obj\Debug\Client.pdb

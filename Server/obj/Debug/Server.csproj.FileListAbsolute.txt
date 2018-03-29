@@ -1,0 +1,9 @@
+D:\Remote Desktop\Server\bin\Debug\Server.exe.config
+D:\Remote Desktop\Server\bin\Debug\Server.exe
+D:\Remote Desktop\Server\bin\Debug\Server.pdb
+D:\Remote Desktop\Server\obj\Debug\Server.frmServer.resources
+D:\Remote Desktop\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Remote Desktop\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+D:\Remote Desktop\Server\obj\Debug\Server.exe
+D:\Remote Desktop\Server\obj\Debug\Server.pdb
+D:\Remote Desktop\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
