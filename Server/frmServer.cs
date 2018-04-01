@@ -14,6 +14,8 @@ using System.Windows.Forms;
 
 namespace Server
 {
+
+
     public partial class frmServer : Form
     {
         [DllImport("user32.dll")]
@@ -64,8 +66,11 @@ namespace Server
             {
                 ipReceiver = strReceive.Substring(0, strReceive.IndexOf('|'));
                 SendResolutionScreen();
-                SenderHandler sender = ImageSender;
-                sender.BeginInvoke(new AsyncCallback(EndSend), null);
+                //SenderHandler sender = ImageSender;
+                Invoke(new Action(() => {
+                    ImageSender();
+                }));
+                //sender.BeginInvoke(new AsyncCallback(EndSend), null);
             }
             else
             {
@@ -99,7 +104,6 @@ namespace Server
             }
         }
 
-
         private void ImageSender()
         {
             try
@@ -120,15 +124,6 @@ namespace Server
         /// Gửi độ phân giải màn hình
         /// </summary>
         /// <param name="resolutionScreen">Độ phân giải màn hình</param>
-        public void SendResolutionScreen(String resolutionScreen)
-        {
-            Socket sender = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            sender.Connect(IPAddress.Parse(ipReceiver), 9099);
-            byte[] resolution = Encoding.ASCII.GetBytes(resolutionScreen);
-            sender.Send(resolution, 0, resolution.Length, SocketFlags.None);
-            sender.Close();
-        }
-
         public void SendResolutionScreen()
         {
             String resolutionScreen = Screen.PrimaryScreen.Bounds.Width.ToString() + ":" + Screen.PrimaryScreen.Bounds.Height.ToString() + "|";
